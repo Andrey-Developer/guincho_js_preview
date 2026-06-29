@@ -302,6 +302,20 @@ section{padding:90px 0;position:relative}
   transition:all .25s;
 }
 .social-row a:hover{background:var(--grad);color:#0b0d10}
+.contact-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:28px}
+.contact-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;padding:14px 20px;border-radius:14px;
+  color:#fff;font-weight:800;letter-spacing:.2px;
+  box-shadow:0 14px 34px -16px rgba(0,0,0,.8);
+  transition:transform .2s,box-shadow .2s,filter .2s;
+}
+.contact-btn:hover{transform:translateY(-3px);box-shadow:0 18px 38px -14px rgba(255,122,0,.45);filter:saturate(1.08)}
+.contact-btn.whatsapp{background:linear-gradient(135deg,var(--whats),var(--whats-d))}
+.contact-btn.phone{background:linear-gradient(135deg,var(--orange),var(--yellow));color:#0b0d10}
+.contact-btn.instagram{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
+.footer-contact a{color:var(--text);font-weight:700;border-bottom:1px solid rgba(255,204,0,.35)}
+.footer-contact a:hover{color:var(--yellow)}
 
 /* ===== FLOATING WHATSAPP ===== */
 .float-whats{
@@ -348,7 +362,7 @@ section{padding:90px 0;position:relative}
 <header class="header">
   <nav class="nav">
     <a href="#" class="logo"><i class="fa-solid fa-truck-pickup"></i> JS <span>Service</span></a>
-    <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho%20agora." target="_blank" class="nav-cta">
+    <a href="https://wa.me/5551997014327?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho%20agora." target="_blank" class="nav-cta">
       <i class="fa-brands fa-whatsapp"></i> <span class="hide-sm">Chamar Guincho</span>
     </a>
   </nav>
@@ -362,7 +376,7 @@ section{padding:90px 0;position:relative}
       <h1>Guincho <span class="accent">Rápido e Seguro</span> Quando Você Mais Precisa</h1>
       <p class="lead">Atendimento ágil para carros, motos e veículos leves. Fale agora pelo WhatsApp e solicite seu guincho com praticidade — socorro automotivo profissional onde você estiver.</p>
       <div class="cta-row">
-        <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho%20agora." target="_blank" class="btn btn-whats btn-lg">
+        <a href="https://wa.me/5551997014327?text=Ol%C3%A1!%20Preciso%20de%20um%20guincho%20agora." target="_blank" class="btn btn-whats btn-lg">
           <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
         </a>
         <a href="#contato" class="btn btn-outline btn-lg">
@@ -402,7 +416,7 @@ section{padding:90px 0;position:relative}
         <div class="service-body">
           <h3>Guincho para Carros</h3>
           <p>Reboque rápido e seguro para automóveis em caso de pane, acidente ou emergência. Atendimento em qualquer região.</p>
-          <a href="https://wa.me/5500000000000" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://wa.me/5551997014327" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="service-card reveal">
@@ -413,7 +427,7 @@ section{padding:90px 0;position:relative}
         <div class="service-body">
           <h3>Guincho para Motos</h3>
           <p>Transporte seguro de motocicletas com equipamento adequado. Sua moto chega ao destino sem riscos.</p>
-          <a href="https://wa.me/5500000000000" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://wa.me/5551997014327" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="service-card reveal">
@@ -424,7 +438,7 @@ section{padding:90px 0;position:relative}
         <div class="service-body">
           <h3>Reboque de Veículos Leves</h3>
           <p>Reboque profissional para utilitários e veículos comerciais leves com agilidade e cuidado total.</p>
-          <a href="https://wa.me/5500000000000" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://wa.me/5551997014327" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="service-card reveal">
@@ -435,7 +449,7 @@ section{padding:90px 0;position:relative}
         <div class="service-body">
           <h3>Socorro Automotivo</h3>
           <p>Suporte emergencial para pane mecânica, pane elétrica e veículos parados na rua ou rodovia.</p>
-          <a href="https://wa.me/5500000000000" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://wa.me/5551997014327" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="service-card reveal">
@@ -446,7 +460,7 @@ section{padding:90px 0;position:relative}
         <div class="service-body">
           <h3>Transporte de Veículos</h3>
           <p>Remoção e transporte de veículos para oficinas, residências ou destino solicitado, com total segurança.</p>
-          <a href="https://wa.me/5500000000000" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://wa.me/5551997014327" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="service-card reveal">
@@ -457,7 +471,7 @@ section{padding:90px 0;position:relative}
         <div class="service-body">
           <h3>Atendimento Emergencial</h3>
           <p>Equipe pronta para responder rapidamente a chamados urgentes — guincho 24 horas perto de você.</p>
-          <a href="https://wa.me/5500000000000" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://wa.me/5551997014327" target="_blank" class="service-link">Solicitar agora <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -490,7 +504,7 @@ section{padding:90px 0;position:relative}
       <h2>Ficou na rua? Seu carro parou? Precisa de guincho agora?</h2>
       <p>Clique no botão ao lado e fale diretamente com a JS Service pelo WhatsApp.</p>
     </div>
-    <a href="https://wa.me/5500000000000?text=Preciso%20de%20guincho%20urgente!" target="_blank" class="btn btn-urgent reveal">
+    <a href="https://wa.me/5551997014327?text=Preciso%20de%20guincho%20urgente!" target="_blank" class="btn btn-urgent reveal">
       <i class="fa-brands fa-whatsapp"></i> Pedir Guincho Agora
     </a>
   </div>
@@ -557,10 +571,18 @@ section{padding:90px 0;position:relative}
 <section class="cta-final" id="contato">
   <div class="container reveal">
     <h2>Precisa de <span class="accent">guincho agora?</span></h2>
-    <p>Não fique esperando. Fale com a JS Service pelo WhatsApp e solicite atendimento.</p>
-    <a href="https://wa.me/5500000000000?text=Preciso%20de%20guincho%20agora!" target="_blank" class="btn btn-whats btn-lg">
-      <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
-    </a>
+    <p>Não fique esperando. Fale com a JS Service pelo WhatsApp, telefone ou Instagram e solicite atendimento.</p>
+    <div class="contact-actions">
+      <a href="https://wa.me/5551997014327?text=Preciso%20de%20guincho%20agora!" target="_blank" class="contact-btn whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp (51) 99701-4327
+      </a>
+      <a href="tel:5130288509" class="contact-btn phone">
+        <i class="fa-solid fa-phone"></i> Ligar 3028-8509
+      </a>
+      <a href="https://www.instagram.com/jsservicepoa/" target="_blank" class="contact-btn instagram">
+        <i class="fa-brands fa-instagram"></i> @jsservicepoa
+      </a>
+    </div>
   </div>
 </section>
 
@@ -572,8 +594,8 @@ section{padding:90px 0;position:relative}
         <a href="#" class="logo"><i class="fa-solid fa-truck-pickup"></i> JS <span>Service</span></a>
         <p style="margin-top:14px;max-width:340px">Serviço especializado em guincho, reboque e socorro automotivo 24 horas. Atendimento rápido, seguro e profissional.</p>
         <div class="social-row">
-          <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://instagram.com/jsservice" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5551997014327" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/jsservicepoa/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
       <div>
@@ -587,10 +609,11 @@ section{padding:90px 0;position:relative}
       </div>
       <div>
         <h5>Contato</h5>
-        <ul>
-          <li><i class="fa-brands fa-whatsapp"></i> (00) 00000-0000</li>
-          <li><i class="fa-brands fa-instagram"></i> @jsservice</li>
-          <li><i class="fa-solid fa-location-dot"></i> Endereço editável</li>
+        <ul class="footer-contact">
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5551997014327" target="_blank">(51) 99701-4327</a></li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:5130288509">3028-8509</a></li>
+          <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/jsservicepoa/" target="_blank">@jsservicepoa</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Otto%20Niemeyer%2C%201593%20POA" target="_blank">Av. Otto Niemeyer, 1593 • POA</a></li>
         </ul>
       </div>
       <div>
@@ -610,7 +633,7 @@ section{padding:90px 0;position:relative}
 </footer>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/5500000000000?text=Preciso%20de%20guincho!" target="_blank" class="float-whats" aria-label="Chamar pelo WhatsApp">
+<a href="https://wa.me/5551997014327?text=Preciso%20de%20guincho!" target="_blank" class="float-whats" aria-label="Chamar pelo WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 

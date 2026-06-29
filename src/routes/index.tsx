@@ -19,7 +19,10 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WA = "https://wa.me/5500000000000";
+const WA = "https://wa.me/5551997014327";
+const PHONE = "tel:5130288509";
+const INSTAGRAM = "https://www.instagram.com/jsservicepoa/";
+const MAPS = "https://www.google.com/maps/search/?api=1&query=Av.%20Otto%20Niemeyer%2C%201593%20POA";
 
 function Index() {
   useEffect(() => {
@@ -213,10 +216,18 @@ function Index() {
         <section className="cta-final" id="contato">
           <div className="container reveal">
             <h2>Precisa de <span className="accent">guincho agora?</span></h2>
-            <p>Não fique esperando. Fale com a JS Service pelo WhatsApp e solicite atendimento.</p>
-            <a href={`${WA}?text=Preciso%20de%20guincho%20agora!`} target="_blank" rel="noreferrer" className="btn btn-whats btn-lg">
-              <i className="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
-            </a>
+            <p>Não fique esperando. Fale com a JS Service pelo WhatsApp, telefone ou Instagram e solicite atendimento.</p>
+            <div className="contact-actions">
+              <a href={`${WA}?text=Preciso%20de%20guincho%20agora!`} target="_blank" rel="noreferrer" className="contact-btn whatsapp">
+                <i className="fa-brands fa-whatsapp"></i> WhatsApp (51) 99701-4327
+              </a>
+              <a href={PHONE} className="contact-btn phone">
+                <i className="fa-solid fa-phone"></i> Ligar 3028-8509
+              </a>
+              <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="contact-btn instagram">
+                <i className="fa-brands fa-instagram"></i> @jsservicepoa
+              </a>
+            </div>
           </div>
         </section>
 
@@ -228,7 +239,7 @@ function Index() {
                 <p style={{ marginTop: 14, maxWidth: 340 }}>Serviço especializado em guincho, reboque e socorro automotivo 24 horas. Atendimento rápido, seguro e profissional.</p>
                 <div className="social-row">
                   <a href={WA} target="_blank" rel="noreferrer" aria-label="WhatsApp"><i className="fa-brands fa-whatsapp"></i></a>
-                  <a href="https://instagram.com/jsservice" target="_blank" rel="noreferrer" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
+                  <a href={INSTAGRAM} target="_blank" rel="noreferrer" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
                 </div>
               </div>
               <div>
@@ -237,10 +248,11 @@ function Index() {
               </div>
               <div>
                 <h5>Contato</h5>
-                <ul>
-                  <li><i className="fa-brands fa-whatsapp"></i> (00) 00000-0000</li>
-                  <li><i className="fa-brands fa-instagram"></i> @jsservice</li>
-                  <li><i className="fa-solid fa-location-dot"></i> Endereço editável</li>
+                <ul className="footer-contact">
+                  <li><i className="fa-brands fa-whatsapp"></i> <a href={WA} target="_blank" rel="noreferrer">(51) 99701-4327</a></li>
+                  <li><i className="fa-solid fa-phone"></i> <a href={PHONE}>3028-8509</a></li>
+                  <li><i className="fa-brands fa-instagram"></i> <a href={INSTAGRAM} target="_blank" rel="noreferrer">@jsservicepoa</a></li>
+                  <li><i className="fa-solid fa-location-dot"></i> <a href={MAPS} target="_blank" rel="noreferrer">Av. Otto Niemeyer, 1593 • POA</a></li>
                 </ul>
               </div>
               <div>
@@ -375,6 +387,14 @@ const CSS = `
 .js-site .social-row{display:flex;gap:10px;margin-top:14px}
 .js-site .social-row a{width:38px;height:38px;border-radius:10px;background:var(--surface);display:flex;align-items:center;justify-content:center;color:var(--yellow);transition:all .25s}
 .js-site .social-row a:hover{background:var(--grad);color:#0b0d10}
+.js-site .contact-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:28px}
+.js-site .contact-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 20px;border-radius:14px;color:#fff;font-weight:800;letter-spacing:.2px;box-shadow:0 14px 34px -16px rgba(0,0,0,.8);transition:transform .2s,box-shadow .2s,filter .2s}
+.js-site .contact-btn:hover{transform:translateY(-3px);box-shadow:0 18px 38px -14px rgba(255,122,0,.45);filter:saturate(1.08)}
+.js-site .contact-btn.whatsapp{background:linear-gradient(135deg,var(--whats),var(--whats-d))}
+.js-site .contact-btn.phone{background:linear-gradient(135deg,var(--orange),var(--yellow));color:#0b0d10}
+.js-site .contact-btn.instagram{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
+.js-site .footer-contact a{color:var(--text);font-weight:700;border-bottom:1px solid rgba(255,204,0,.35)}
+.js-site .footer-contact a:hover{color:var(--yellow)}
 .js-site .float-whats{position:fixed;bottom:24px;right:24px;z-index:99;width:64px;height:64px;border-radius:50%;background:var(--whats);color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 10px 30px rgba(37,211,102,.5);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 10px 30px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,.6)}50%{box-shadow:0 10px 30px rgba(37,211,102,.5),0 0 0 18px rgba(37,211,102,0)}}
 .js-site .float-whats:hover{transform:scale(1.1)}
